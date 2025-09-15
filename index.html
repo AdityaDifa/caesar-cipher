@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="css/tailwindcss/output.css">
+    <link rel="shortcut icon" href="resource/logo.png" type="image/x-icon">
+  </head>
+  <body class="bg-[#A1C2BD] flex justify-center">
+    <div class="w-[90%] bg-white mt-14 mx-6 flex justify-center p-7 rounded-2xl shadow-lg/20 shadow-[#19183B]">
+      <div class="grid grid-cols-2 gap-5 w-full"> <!--main-->
+        <div class="col-span-full flex justify-center"> <!--title-->
+          <h1 class="text-4xl sm:text-5xl font-bold">Caesar Cipher</h1>
+          <img src="resource/logo.png" alt="icon" class="w-11 sm:w-14">
+        </div>
+        <div class="flex mt-10 col-span-full justify-start"> <!--settings-->
+          <p class="text-sm sm:text-lg ">input a Key :</p>
+          <input type="text" class="border-1 rounded-md w-20 ml-3" id="key">
+          <button class="border-1 rounded-md w-20 ml-1 bg-[#19183B] text-[#E7F2EF] hover:bg-[#708993] active:bg-[#A1C2BD] shadow-2xl shadow-[#A1C2BD]/50" id="tombol">Change</button>
+          <label class="mx-3 text-sm">
+            <input type="radio" name="mode" value="enkripsi" checked>encryption
+          </label>
+          <label class="text-sm">
+            <input type="radio" name="mode" value="dekripsi">decryption
+          </label>
+        </div>
+        <div class="col-span-full sm:col-span-1"> <!--input text box-->
+          <h1 class="text-center font-bold">Input Text</h1>
+          <textarea name="input-text" id="inputText" class="border-1 rounded-md w-full h-50 text-pretty p-5 text-sm sm:text-lg"></textarea>
+        </div>
+        <div class="col-span-full sm:col-span-1"> <!--output text box-->
+          <h1 class="text-center font-bold">Result</h1>
+          <textarea name="output-text" id="outputText" class=" bg-gray-100 border-1 rounded-md w-full h-50 text-pretty p-5 text-sm sm:text-lg" readonly="false"></textarea>
+        </div>
+        <div class="col-span-full flex justify-center items-center"> <!--footer-->
+          <h1 class="text-center text-sm">@Created by Aditya Difa September 15 2025</h1>
+          <a href="https://www.linkedin.com/in/aditya-difa-59901b193/" target="_blank" class="mx-5"><button class="text-sm border-1 p-1 rounded-lg bg-[#0A66C2] text-white hover:bg-blue-400 active:bg-blue-900">Check my Linkedlin</button></a>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="controller/main.js"></script>
+  </body>
+</html>
